@@ -1,0 +1,36 @@
+{
+  "configs": [
+    "global.xml",
+    "pro101.xml"
+  ],
+  "secureProperties": [
+    "secure.key"
+  ],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:pro101:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.4.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "local.secure.properties",
+        "log4j2.xml",
+        "global.xml",
+        "qa.properties",
+        "local.properties",
+        "dev.properties",
+        "prod.properties",
+        "pro101.xml",
+        "prod.secure.properties",
+        "dev.secure.properties",
+        "qa.secure.properties"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

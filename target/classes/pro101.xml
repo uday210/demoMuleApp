@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="pro101Flow" doc:id="3bc72a50-20a8-4d18-ae61-34fa996c6ed3" >
+		<http:listener doc:name="Listener" doc:id="ab7d2c17-615d-4918-91d1-778ee672984c" config-ref="HTTP_Listener_config" path="/api"/>
+		<set-payload value="dynamicProperties" doc:name="Set Payload" doc:id="1099330a-1544-493b-9d3c-f72559ff3749" />
+		<logger level="INFO" doc:name="Logger" doc:id="ab250c33-9424-4c7c-8ffc-032eb89deec8" message='#[output application/java&#10;---&#10;"Username: " ++ Mule::p("secure::example.username")&#10;++ " - " ++&#10;"Password: " ++ Mule::p("secure::example.password")]'/>
+	</flow>
+</mule>
