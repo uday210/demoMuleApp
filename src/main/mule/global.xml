@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mu
 	</http:listener-config>
 	<configuration-properties doc:name="Configuration properties" doc:id="37890728-f5a2-488a-98ba-12057e5c1c1a" file="${env}.properties" />
 	<global-property doc:name="Global Property" doc:id="67d40662-847e-4fad-9fac-d7b3f1c36a36" name="env" value="qa" />
-	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="acb0970b-a344-446a-94ec-cf0d72aa5778" file="${env}.secure.properties" key="${secure.key}" >
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="acb0970b-a344-446a-94ec-cf0d72aa5778" file="${env}.secure.properties" key="MyMuleSoftKey" >
 		<secure-properties:encrypt algorithm="Blowfish" />
 	</secure-properties:config>
 	</mule>
