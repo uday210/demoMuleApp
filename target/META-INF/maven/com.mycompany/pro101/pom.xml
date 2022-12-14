@@ -42,11 +42,15 @@
 						<muleVersion>${anypoint.muleVersion}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>${anypoint.appName}</applicationName>
+						<applicationName>pro101</applicationName>
 						<environment>Sandbox</environment>
 						<region>${anypoint.region}</region>
 						<workers>${anypoint.workers}</workers>
 						<objectStoreV2>true</objectStoreV2>
+						<properties>
+							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
+							<secure.key>${secure.key}</secure.key>
+						</properties>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
