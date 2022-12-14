@@ -42,7 +42,7 @@
 						<muleVersion>${anypoint.muleVersion}</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<applicationName>${anypoint.appName}</applicationName>
+						<applicationName>pro101</applicationName>
 						<environment>Sandbox</environment>
 						<region>${anypoint.region}</region>
 						<workers>${anypoint.workers}</workers>
